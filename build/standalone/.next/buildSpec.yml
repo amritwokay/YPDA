@@ -1,0 +1,18 @@
+applications:
+  - frontend:
+      buildPath: '/'  # run install and build from monorepo project root
+      phases:
+        preBuild:
+          commands:
+            - npm install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: packages/amplify-app/.next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: packages/amplify-app

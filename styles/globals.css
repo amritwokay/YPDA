@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media (prefers-color-scheme: dark) {
+  [data-amplify-color-mode='system'] {
+    --amplify-colors-background-primary: black;
+  }
+}
+
+[data-amplify-color-mode='dark'] {
+  --amplify-colors-background-primary: black;
+}
+@layer components {
+  .main { 
+    --background: theme(backgroundColor.custom-gray);
+    display: flex;
+    justify-content: left; 
+    width: 125%;
+    margin-left: -50%;
+  }
+  .blue-button-w-gradient-border {
+    --blue500: theme(colors.blue.500);
+    --blue700: theme(colors.blue.700);
+    --blue800: theme(colors.blue.800);
+    width: 28%;
+    background: linear-gradient(to bottom right, var(--blue500), var(--blue700))
+        padding-box,
+      linear-gradient(to bottom, var(--blue500), var(--blue800)) border-box;
+    border: 1px solid transparent;
+  }
+  .light-button-w-gradient-border {
+    --gray50: theme(colors.gray.50);
+    background: linear-gradient(to bottom, var(--gray50), var(--gray50))
+        padding-box,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.27))
+        border-box;
+    border: 1px solid transparent;
+  }
+  .dark-button-w-gradient-border {
+    --gray50: theme(backgroundColor.custom-dark-gray);
+    background: linear-gradient(to bottom, var(--gray50), var(--gray50))
+        padding-box,
+      linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.1)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+  .container-w-gradient-border {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    width: 150%; /* Increase the width of the container */
+    margin-left: -25%;
+    background: linear-gradient(to bottom, white, white) padding-box,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.19))
+        border-box;
+    border: 1px solid transparent;
+  }
+  .dark-container-w-gradient-border {
+    --background: theme(backgroundColor.custom-gray);
+    background: linear-gradient(to bottom, var(--background), var(--background))
+        padding-box,
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1))
+        border-box;
+    border: 1px solid transparent;
+  }
+  .container-w-gradient-border-left {
+    display: flex;
+    justify-content: left; /* Horizontally center the content */
+    width: 125%; /* Increase the width of the container */
+    margin-left: -50%;
+    background: linear-gradient(to bottom, white, white) padding-box,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.19))
+        border-box;
+    border: 1px solid transparent;
+  }
+  .dark-container-w-gradient-border-left {
+    --background: theme(backgroundColor.custom-gray);
+    display: flex;
+    justify-content: left; /* Horizontally center the content */
+    width: 125%; /* Increase the width of the container */
+    margin-left: -50%;
+    background: linear-gradient(to bottom, black, black) padding-box,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.19))
+        border-box;
+    border: 1px solid transparent;
+  }
+  .container-w-gradient-border-right {
+    display: flex;
+    justify-content: right; /* Horizontally center the content */
+    margin-right: -70%;
+    background: linear-gradient(to bottom, white, white) padding-box,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.19))
+  }
+  .dark-container-w-gradient-border-right {
+    --background: theme(backgroundColor.custom-gray);
+    display: flex;
+    justify-content: right; /* Horizontally center the content */
+    margin-right: -70%;
+    background: linear-gradient(to bottom, black, black),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.19))
+  }
+}
