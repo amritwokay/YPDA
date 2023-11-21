@@ -1,70 +1,80 @@
-# Getting Started with Create React App -
+# DataPrompters: Natural Language Query Interface for Databases
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DataPrompters is a web application that simplifies database interaction through natural language queries. It provides users with an intuitive interface to retrieve insights from databases without the need for complex SQL queries.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [How to Contribute](#how-to-contribute)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DataPrompters facilitates seamless communication with databases using natural language queries. It translates user inputs into SQL queries, executes them on the serverless backend, and presents the results in an easy-to-understand format.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
 
-### `npm test`
+- **Natural Language Processing (NLP):** Translate human language queries into SQL for efficient database interaction.
+- **Serverless Backend:** Utilizes AWS Lambda for scalable and cost-effective query execution.
+- **Database Integration:** Connects with AWS RDS to manage data storage and retrieval.
+- **User-Friendly Frontend:** Developed using Next.js and Tailwind CSS for a responsive and visually appealing interface.
+- **Continuous Deployment:** Implements continuous deployment with Vercel and AWS Amplify for seamless updates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- Next.js
+- Tailwind CSS
+- AWS Lambda
+- AWS RDS
+- Natural Language Processing (NLP)
+- Vercel
+- AWS Amplify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with DataPrompters locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository: `git clone [repository_url]`
+2. Install dependencies: `npm install`
+3. Set up your AWS credentials and configure the database connection.
+4. Run the application: `npm run dev`
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project structure is organized as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+├── components/
+├── hooks/
+├── pages/
+├── styles/
+├── utils/
+├── .env.example
+├── globals.css
+├── next.config.js
+├── package.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `components/`: React components used in the application.
+- `hooks/`: Custom React hooks.
+- `pages/`: Next.js pages.
+- `styles/`: Stylesheets using Tailwind CSS.
+- `utils/`: Utility functions.
+- `.env.example`: Example environment variables file.
+- `globals.css`: Global styles.
+- `next.config.js`: Next.js configuration.
+- `package.json`: Node.js dependencies and scripts.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How to Contribute
 
-## Learn More
+If you would like to contribute to the project, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request.
